@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="form">
+    <input type="text" placeholder="姓名" value="{{contact.name}}" bindinput="inputName" />
+    <input type="text" placeholder="电话" value="{{contact.phone}}" bindinput="inputPhone" />
+    <input type="text" placeholder="科室" value="{{contact.department}}" bindinput="inputDepartment" />
+    <picker bindchange="selectGender" value="{{genderIndex}}" range="{{genders}}">
+      <view class="picker">
+        性别：{{genders[genderIndex]}}
+      </view>
+    </picker>
+    <button bindtap="saveContact">保存</button>
+  </view>
+</view>

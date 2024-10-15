@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="search">
+    <input type="text" placeholder="搜索联系人" bindinput="searchInput" />
+  </view>
+  <view class="contact-list">
+    <block wx:for="{{contacts}}" wx:key="id">
+      <view class="contact-item" bindtap="editContact" data-id="{{item.id}}">
+        <text>{{item.name}}</text>
+        <text>{{item.phone}}</text>
+      </view>
+    </block>
+  </view>
+  <button class="add-btn" bindtap="addContact">添加联系人</button>
+</view>

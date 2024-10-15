@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="user-list">
+    <block wx:for="{{users}}" wx:key="id">
+      <view class="user-item">
+        <text>{{item.phone}}</text>
+        <switch checked="{{item.is_admin}}" bindchange="toggleAdmin" data-id="{{item.id}}"/>
+      </view>
+    </block>
+  </view>
+</view>

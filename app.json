@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/contacts/contacts",
+    "pages/addEdit/addEdit",
+    "pages/admin/admin"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "电话本",
+    "navigationBarTextStyle": "black"
+  }
+}
